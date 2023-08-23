@@ -1,0 +1,10 @@
+<p>Hello, {{ name }}!</p>
+<p>Your favorite color is: {{ color }}</p>
+
+<button [style.background]="color" (click)="changeColor()">Click Here!</button>
+<br>
+
+<p>Different Colors on clicking button: {{ colors }}</p>
+<button [style.background]="colors" (click)="randomColor()">Click Here!</button> 
+
+<app-nested [inputData]="color"></app-nested>
